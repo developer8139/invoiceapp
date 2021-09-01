@@ -10,16 +10,29 @@ export const Overlay = styled.div`
 `
 
 
+export const Title = styled.h1`
+    font-family: sans;
+
+    &:before {
+        content: 'Invoice';
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+`
+
+
 export const MainDiv = styled.div`
 display: grid;
 grid-template-columns: auto auto;
-grid-template-rows: 385px 385px;
+grid-template-rows: auto auto;
 background-color: ${props => props.open ? 'lightgray' : 'white'};
 height: 80vh;
 width: 70vw;
 border: 1px dotted lightblue;
 border-radius: 10px;
 margin: 0 auto;
+box-shadow: 0 0 8px lightgray;
 `
 
 
@@ -64,7 +77,8 @@ background-color: limegreen;
 outline: none;
 border: none;
 text-align: center;
-box-shadow: 1px 6px 5px 2px lightgray;
+box-shadow: 2px 2px 1px lightgray, 5px 6px 1px inset limegreen, 1px 3px 7px black;
+border: 1px solid gray;
 margin-top: 50px;
 `
 
@@ -74,22 +88,28 @@ grid-column-start: 2;
 grid-row-start: 2;
 transition: box-shadow 0.6s ease;
 :hover {
-    box-shadow: 4px 4px 4px 4px lightgray;
+    box-shadow: 4px 4px 4px inset lightgray;
 }
 `
 
 
 export const SalesContainer = styled.div`
     transition: box-shadow 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
     :hover {
-        box-shadow: 4px 4px 4px 4px lightgray;
+        box-shadow: 4px 4px 4px inset lightgray;
     }
 `
 
 export const BarContainer = styled.div`
-    position: relative;
-    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
 `
 
 
@@ -104,14 +124,15 @@ grid-column-start: 1;
 transition: box-shadow 0.6s ease;
 
 :hover {
-    box-shadow: 4px 4px 4px 4px lightgray;
+    box-shadow: 4px 4px 4px lightgray;
 }
 `
 
 
 export const GraphContainer = styled.div`
-position: relative;
-left: 19%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 
@@ -123,6 +144,13 @@ export const SearchContainer = styled.div`
 export const MainContainer = styled.div`
     transition: box-shadow 0.6s ease;
     :hover {
-        box-shadow: 4px 4px 4px 4px lightgray;
+        box-shadow: 4px 4px 4px lightgray;
     }
+`
+
+
+export const Number = styled.p`
+    font-weight: bold;
+    font-size: 35px;
+    color: lightgray;
 `

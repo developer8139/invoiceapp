@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  background-color:aliceblue;
+  height: 100vh;
 }
 
 #input {

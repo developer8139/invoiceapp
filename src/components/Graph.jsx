@@ -1,14 +1,9 @@
 import {PieChart, Pie, Tooltip} from 'recharts';
-import {useEffect} from 'react';
 import { GraphDiv, GraphContainer } from './Styles';
 
 
 
 export const Graph = ({datas}) => {
-
-    useEffect(function() {
-        console.log(datas)
-    })
 
     return (
         <GraphDiv>

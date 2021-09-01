@@ -32,6 +32,7 @@ export const TotalSalesWindow = ({sale}) => {
         <SalesContainer>
             <h2 style={{color: "limegreen", fontSize: "1.9rem"}}>Sales: <span style={{color: "black", fontWeight: "none"}}>${entries.entry1}</span></h2>
             <p style={{color: "lightgray"}}>Total Sales: <span>${entries.entry2}</span></p>
+        
             <BarContainer>
                 <BarChart
                     data={datas}
